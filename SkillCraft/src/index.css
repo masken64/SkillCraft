@@ -1,28 +1,43 @@
 @font-face {
-    font-family: "cindie";
-    src: url('./assets/Cindie2-N.woff');
+  font-family: "cindie";
+  src: url("./assets/Cindie2-N.woff");
 }
 
-
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
 }
-.logo{
-    max-width: 200px;
-    padding: 5px;
-    cursor: pointer;
+.logo {
+  max-width: 200px;
+  padding: 5px;
+  cursor: pointer;
 }
-.viewcode{
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-family: 'cindie';
-
+.viewcode {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "cindie";
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid;
+}
+.lbody {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+}
+.pinfo,
+.einfo,
+.exinfo,
+.prinfo {
+  display: flex;
+  flex-direction: column;
 }
