@@ -1,3 +1,9 @@
 export default function Rbody() {
-  return <></>;
+  return <>
+  
+    <div className="page">
+      
+    </div>
+    
+  </>;
 }

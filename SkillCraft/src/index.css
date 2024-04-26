@@ -2,10 +2,13 @@
   font-family: "cindie";
   src: url("./assets/Cindie2-N.woff");
 }
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 body {
   padding: 0;
   margin: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 .header {
   display: flex;
@@ -23,16 +26,20 @@ body {
   text-decoration: none;
   padding: 10px;
   font-family: "cindie";
+  transition: 0.3s font-size ease-in-out;
+}
+.viewcode:hover{
+  font-size: 20px;
 }
 .main {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  border: 1px solid;
+ 
 }
 .lbody {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  
 }
 .pinfo,
 .einfo,
@@ -40,4 +47,52 @@ body {
 .prinfo {
   display: flex;
   flex-direction: column;
+  font-family: "cindie";
+  font-optical-sizing: auto;
+}
+legend{
+  font-family: "cindie";
+  font-optical-sizing: auto;
+}
+input{
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  padding: 5px;
+  background-color: #55555542;
+  color: white;
+  max-width: 300px;
+  transition: border 0.3s;
+}
+input:hover{
+  border: 1px solid rgba(0, 128, 0, 0.589);
+}
+fieldset{
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px;
+  border: 0.1px solid rgba(128, 128, 128, 0.493);
+}
+form{
+  padding: 10px;
+}
+label{
+  padding: 5px;
+}
+.page {
+  background-color: white;
+  width: 210mm; /* A4 width */
+  height: 297mm; /* A4 height */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  margin-top: 20px;
+
+  top: 70px;
+  left: 0;
+  right: 0;
+}
+
+.pcont{
+  
+  width: 100%; 
+  padding: 20px; 
 }
